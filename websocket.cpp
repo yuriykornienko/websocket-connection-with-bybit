@@ -207,7 +207,7 @@ int main()
     catch (std::exception const& e) {
       
         std::cerr << "Error: " << e.what() << std::endl;
-               
+        async_read.detach();       
         return EXIT_FAILURE;
     }
   
